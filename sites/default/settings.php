@@ -796,11 +796,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'sashiwork',
-  'username' => 'root',
-  'password' => '',
+  'database' => 'drupal8',
+  'username' => 'drupal8',
+  'password' => 'drupal8',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'database',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
