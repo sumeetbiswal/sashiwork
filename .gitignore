@@ -11,7 +11,7 @@
 /sites/*/public
 /sites/*/private
 /sites/*/files-public
-/sites/*/files-private
+.sites/*/files-private
 
 # Ignore paths that may contain temporary files
 /sites/*/translations
@@ -21,3 +21,10 @@
 # Ignore testing related files
 /sites/simpletest
 
+.csslintrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitattributes
+.ht.router.php
+.lando.yml
