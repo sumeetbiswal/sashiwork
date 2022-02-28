@@ -1,0 +1,7 @@
+core: 8.x
+type: theme
+name: 'Demo '
+description: 'Demo Basic template'
+base theme: bartik
+
+
