@@ -796,8 +796,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'pioneerc_demo',
-  'username' => 'pioneerc_demo',
+  'database' => 'raisingi_drupal',
+  'username' => 'raisingi_drupal',
   'password' => 'sumeet#1234',
   'prefix' => '',
   'host' => 'localhost',
