@@ -1,36 +1,11 @@
 global-styling:
-  header: true
+  header: false
   css:
     theme:
-      css/bootstrap.css: {}
-      css/settings.css: {}
-      css/style.css: {}
-      css/responsive.css: {}
-      css/colors/blue.css: {}
-      css/animate.css: {}
-      css/fontello.css: {}
-      css/fontello-ie7: {browsers: { IE: 'IE 7', '!IE': false } }    
+      css/demo.css: {}  
   js: 
     js/jquery.min.js: {}
-    js/jquery.migrate.js: {}
-    js/modernizrr.js: {}
-    js/bootstrap.js: {}
-    js/jquery.fitvids.js: {}
-    js/owl.carousel.min.js: {}
-    js/nivo-lightbox.min.js: {}
-    js/jquery.isotope.min.js: {}
-    js/jquery.appear.js: {}
-    js/count-to.js: {}
-    js/jquery.textillate.js: {}
-    js/jquery.lettering.js: {}
-    js/jquery.easypiechart.min.js: {}
-    js/jquery.nicescroll.min.js: {}
-    js/jquery.parallax.js: {}
-    js/jquery.themepunch.plugins.min.js: {}
-    js/jquery.themepunch.revolution.min.js: {}
-    js/script.js: {}
-    js/preqube.js: {}
-    http://html5shiv.googlecode.com/svn/trunk/html5.js: {browsers: { IE: 'IE 8', '!IE': false } }
+    js/demo.js: {}
     
   dependencies:
     - bootstrap/theme
