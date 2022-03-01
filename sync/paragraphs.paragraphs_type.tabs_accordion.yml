@@ -1,0 +1,7 @@
+uuid: 71535761-323b-458d-9345-218bb5dad530
+langcode: en
+status: true
+dependencies: {  }
+id: tabs_accordion
+label: 'Tabs & Accordion'
+behavior_plugins: {  }

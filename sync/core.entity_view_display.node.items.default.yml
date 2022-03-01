@@ -1,0 +1,59 @@
+uuid: 3a01b0a2-48d4-47d4-a03f-4bf4375197bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.items.body
+    - field.field.node.items.field_image_carousal_item
+    - field.field.node.items.field_simple_accordions
+    - field.field.node.items.field_tabs_accordion
+    - node.type.items
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.items.default
+targetEntityType: node
+bundle: items
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_carousal_item:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_simple_accordions:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_tabs_accordion:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,7 @@
+uuid: 5032890f-d492-4cf6-9d33-4e209d2cf44d
+langcode: en
+status: true
+dependencies: {  }
+id: single_tab
+label: 'Single Tab'
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: 5adce63d-ca8a-414a-864c-9ab468b31ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_accordion.field_tabs_accordion
+    - paragraphs.paragraphs_type.tabs_accordion
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs_accordion.default
+targetEntityType: paragraph
+bundle: tabs_accordion
+mode: default
+content:
+  field_tabs_accordion:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

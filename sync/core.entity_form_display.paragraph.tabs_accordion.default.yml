@@ -1,0 +1,30 @@
+uuid: 23d84118-a721-4807-bf16-6149d474e529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_accordion.field_tabs_accordion
+    - paragraphs.paragraphs_type.tabs_accordion
+  module:
+    - paragraphs
+id: paragraph.tabs_accordion.default
+targetEntityType: paragraph
+bundle: tabs_accordion
+mode: default
+content:
+  field_tabs_accordion:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,45 @@
+uuid: 72382953-75ed-4fbe-b7c6-baf0c177ac31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simple_accordions
+    - node.type.items
+    - paragraphs.paragraphs_type.simple_accordion
+  module:
+    - entity_reference_revisions
+id: node.items.field_simple_accordions
+field_name: field_simple_accordions
+entity_type: node
+bundle: items
+label: 'Simple Accordions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      simple_accordion: simple_accordion
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 7
+        enabled: false
+      carousel_items:
+        weight: 8
+        enabled: false
+      image_carousal:
+        weight: 9
+        enabled: false
+      simple_accordion:
+        enabled: true
+        weight: 10
+      single_tab:
+        weight: 11
+        enabled: false
+      tabs_accordion:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: 7ed8dde9-8b88-45dc-a496-8ab9a5565534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_accordion_title
+    - paragraphs.paragraphs_type.simple_accordion
+id: paragraph.simple_accordion.field_simple_accordion_title
+field_name: field_simple_accordion_title
+entity_type: paragraph
+bundle: simple_accordion
+label: 'Simple Accordion title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 3fc11a4b-6ba5-4f0d-8f42-34e9520dca46
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_tabs_accordion
+field_name: field_tabs_accordion
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
