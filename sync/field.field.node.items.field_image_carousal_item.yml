@@ -1,0 +1,33 @@
+uuid: a9f6d7c5-0d0c-4f10-b9b0-67c83113d02f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_carousal_item
+    - node.type.items
+    - paragraphs.paragraphs_type.image_carousal
+  module:
+    - entity_reference_revisions
+id: node.items.field_image_carousal_item
+field_name: field_image_carousal_item
+entity_type: node
+bundle: items
+label: 'Image Carousal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_carousal: image_carousal
+    target_bundles_drag_drop:
+      carousel_items:
+        weight: 3
+        enabled: false
+      image_carousal:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

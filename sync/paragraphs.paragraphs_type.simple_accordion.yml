@@ -1,0 +1,7 @@
+uuid: fdcced99-ce16-45d8-aabe-ab0f72d92ab1
+langcode: en
+status: true
+dependencies: {  }
+id: simple_accordion
+label: 'Simple Accordions'
+behavior_plugins: {  }

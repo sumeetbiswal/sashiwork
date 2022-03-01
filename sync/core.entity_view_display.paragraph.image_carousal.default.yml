@@ -1,0 +1,24 @@
+uuid: dbecfa7b-bde4-4bbc-a75e-5931bda9e8b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_carousal.field_image_carousal
+    - paragraphs.paragraphs_type.image_carousal
+  module:
+    - entity_reference_revisions
+id: paragraph.image_carousal.default
+targetEntityType: paragraph
+bundle: image_carousal
+mode: default
+content:
+  field_image_carousal:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

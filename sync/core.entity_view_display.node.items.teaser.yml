@@ -1,0 +1,36 @@
+uuid: 59d97960-4347-452e-8a45-8a09c0e14ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.items.body
+    - field.field.node.items.field_image_carousal_item
+    - field.field.node.items.field_simple_accordions
+    - field.field.node.items.field_tabs_accordion
+    - node.type.items
+  module:
+    - text
+    - user
+id: node.items.teaser
+targetEntityType: node
+bundle: items
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_carousal_item: true
+  field_simple_accordions: true
+  field_tabs_accordion: true

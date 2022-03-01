@@ -1,0 +1,23 @@
+uuid: 9e6c066e-2ec1-400a-b477-b3b3435fbd4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_answer
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - text
+id: paragraph.accordion_item.field_answer
+field_name: field_answer
+entity_type: paragraph
+bundle: accordion_item
+label: Answer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

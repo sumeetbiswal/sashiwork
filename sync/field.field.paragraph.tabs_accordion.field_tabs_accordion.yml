@@ -1,0 +1,42 @@
+uuid: 4fd04fa6-e53e-4394-8a9b-ab3c10961612
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_accordion
+    - paragraphs.paragraphs_type.single_tab
+    - paragraphs.paragraphs_type.tabs_accordion
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs_accordion.field_tabs_accordion
+field_name: field_tabs_accordion
+entity_type: paragraph
+bundle: tabs_accordion
+label: 'Tabs & Accordion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      single_tab: single_tab
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 6
+        enabled: false
+      carousel_items:
+        weight: 7
+        enabled: false
+      image_carousal:
+        weight: 8
+        enabled: false
+      single_tab:
+        enabled: true
+        weight: 9
+      tabs_accordion:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

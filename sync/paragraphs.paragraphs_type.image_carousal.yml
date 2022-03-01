@@ -1,0 +1,7 @@
+uuid: 247345bf-2328-40ab-869d-ef0818cf767c
+langcode: en
+status: true
+dependencies: {  }
+id: image_carousal
+label: 'Image Carousal'
+behavior_plugins: {  }
