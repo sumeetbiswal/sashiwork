@@ -41,8 +41,7 @@
   <div class="gallery-container">
     {% set i = 1 %}
     {% for item in items %}
-      <div class="gallery-item gallery-item-{{ i }}"><div class="slide-title">{{ item.content['#paragraph'].field_slide_title.value }}</div>
-	  <img src={{ file_url(item.content['#paragraph'].field_slide_image.entity.fileuri) }} data-index="{{ i }}"><div class="description">{{ item.content['#paragraph'].field_slide_description.value |raw }}</div></div>
+      <div class="gallery-item gallery-item-{{ i }}"><div class="slide-title">{{ item.content['#paragraph'].field_slide_title.value }}</div><img src={{ file_url(item.content['#paragraph'].field_slide_image.entity.field_media_image.entity.fileuri) }} data-index="{{ i }}"><div class="description">{{ item.content['#paragraph'].field_slide_description.value }}</div></div>
       {% set i = i + 1 %}
     {% endfor %}
   </div>
