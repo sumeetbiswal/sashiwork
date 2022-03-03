@@ -1,4 +1,12 @@
 /* Accordion Styling */
+.tabs-acc{
+    width: 95%;
+    margin-top: -80px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    margin-left: 14px;
+}
 .accordion {
     background-color: #ecedee;
     color: #000000;
@@ -89,6 +97,8 @@
   }
   
   .tab button.active {
+    background-color: #ccc;
+  }  .tab button.tactive {
     background-color: #ccc;
   }
   
@@ -258,6 +268,10 @@
   }
   
   .active{
+  color: red;
+  background-color: red;
+}  
+ .tactive{
   color: red;
   background-color: red;
 }
