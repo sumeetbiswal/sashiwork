@@ -1,0 +1,19 @@
+uuid: f705bb09-7d86-4f9f-a830-9e212b489014
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_scroll_title
+    - paragraphs.paragraphs_type.scrolling_tab
+id: paragraph.scrolling_tab.field_scroll_title
+field_name: field_scroll_title
+entity_type: paragraph
+bundle: scrolling_tab
+label: 'Scroll Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

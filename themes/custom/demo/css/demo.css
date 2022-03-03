@@ -256,3 +256,18 @@
   .gallery-nav li.gallery-item-selected {
     background: #555;
   }
+  
+  .active{
+  color: red;
+  background-color: red;
+}
+
+#nav{
+    position: sticky;
+    top: 10px;
+    float: left;
+}
+
+section{
+  min-height: 500px;
+}
