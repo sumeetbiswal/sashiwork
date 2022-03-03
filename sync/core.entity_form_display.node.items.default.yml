@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.items.body
+    - field.field.node.items.field_add_scrolling_tab_item
     - field.field.node.items.field_image_carousal_item
     - field.field.node.items.field_simple_accordions
     - field.field.node.items.field_tabs_accordion
@@ -33,6 +34,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_scrolling_tab_item:
+    type: entity_reference_paragraphs
+    weight: 125
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_image_carousal_item:
     type: entity_reference_paragraphs
     weight: 122

@@ -1,0 +1,7 @@
+uuid: 4d780bac-fbf6-4a7e-81ea-4e756f36ee1b
+langcode: en
+status: true
+dependencies: {  }
+id: scrolling_tab
+label: 'Scrolling Tab'
+behavior_plugins: {  }

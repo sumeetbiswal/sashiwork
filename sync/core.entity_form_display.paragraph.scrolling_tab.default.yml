@@ -1,0 +1,37 @@
+uuid: 82f14a93-274a-4d2f-86bf-73806ff5acae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.scrolling_tab.field_scroll_description
+    - field.field.paragraph.scrolling_tab.field_scroll_title
+    - paragraphs.paragraphs_type.scrolling_tab
+  module:
+    - text
+id: paragraph.scrolling_tab.default
+targetEntityType: paragraph
+bundle: scrolling_tab
+mode: default
+content:
+  field_scroll_description:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_scroll_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

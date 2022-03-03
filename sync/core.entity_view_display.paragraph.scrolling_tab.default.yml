@@ -1,0 +1,31 @@
+uuid: 36748d77-c175-44e6-9ea8-e4a51da386de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.scrolling_tab.field_scroll_description
+    - field.field.paragraph.scrolling_tab.field_scroll_title
+    - paragraphs.paragraphs_type.scrolling_tab
+  module:
+    - text
+id: paragraph.scrolling_tab.default
+targetEntityType: paragraph
+bundle: scrolling_tab
+mode: default
+content:
+  field_scroll_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_scroll_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
