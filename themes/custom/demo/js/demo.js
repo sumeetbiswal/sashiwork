@@ -1,5 +1,5 @@
 window.onload = function() {
- var newDiv = $('<div><button id="openAll" style="margin: 22px;">Open All</button><button id="closeAll">Close All</button></div>');  
+var newDiv = $('<div><button id="openAll" style="margin: 22px;">Open All</button><button id="closeAll">Close All</button></div>');  
 $( "#simple-accordion" ).prepend(newDiv);
  $('#closeAll').click(function(){
 $('#simple-accordion .button-simple-accordion').removeClass('panel-active');
@@ -126,3 +126,17 @@ function openTab(evt, cityName) {
 }
 
 
+function opentab_banner(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" tactive", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " tactive";
+}
+$(".tabcontent-t").css('display','block');

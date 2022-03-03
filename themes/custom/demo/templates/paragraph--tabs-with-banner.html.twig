@@ -1,0 +1,16 @@
+<div>
+	<div><img src=" {{ file_url(paragraph.field_banner_image.entity.fileuri) }}" style="height: 385px;width: 100%;"/></div>
+	<div class="tabs-acc">
+		<div class="tab">			
+			{% for key, item in paragraph.field_tabs_on_banner if key|first != '#' %}
+				<button class="tablinks {{(key==0) ? 'tactive' }} " onclick="opentab_banner(event, {{key}})">{{item.entity.field_tab_title_banner.value }}</button>
+			{% endfor %}	
+		</div>
+		{% for key, item in paragraph.field_tabs_on_banner if key|first != '#' %}
+			<div id="{{key}}" class="tabcontent {{(key==0) ? 'tabcontent-t' }}">
+				<h3>{{item.entity.field_tab_title_banner.value }}</h3>
+				<p>{{item.entity.field_tab_des.value |raw}}</p>
+			</div>
+		{% endfor %}
+	</div>
+</div>
