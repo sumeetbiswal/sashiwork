@@ -10,6 +10,20 @@ $('#openAll').click(function(){
   $('#simple-accordion .ans-panel').css('max-height',' 94px');
 });
 }
+
+$(window).bind('scroll', function() {
+    var currentTop = $(window).scrollTop();
+    var elems = $('.scrollspy');
+    elems.each(function(index){
+      var elemTop 	= $(this).offset().top;
+      var elemBottom 	= elemTop + $(this).height();
+      if(currentTop >= elemTop && currentTop <= elemBottom){
+        var id 		= $(this).attr('id');
+        var navElem = $('a[href="#' + id+ '"]');
+    navElem.parent().addClass('active').siblings().removeClass( 'active' );
+      }
+    })
+}); 
 /* var targetDiv = document.getElementById('simple-accordion');
 targetDiv.insertAdjacentHTML += '<div><button id="openAll">Open All</button><button id="closeAll">Close All</button></div>';
  *///Carousal
@@ -110,3 +124,5 @@ function openTab(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
