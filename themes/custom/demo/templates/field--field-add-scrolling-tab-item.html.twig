@@ -1,35 +1,20 @@
 <nav id="nav" class="navbar navbar-template">
         <div class="row col-xs-12 text-center">
           <ul>
-            <li class="active">
-              <a href="#Home">Home</a>
+          {% set i = 1 %}
+           {% for item in items %}
+              <li class="{% if i == 1  %} active  {% endif %}">
+              <a href="#{{ item.content['#paragraph'].field_scroll_title.value }}">{{ item.content['#paragraph'].field_scroll_title.value }}</a>
             </li>
-            <li>
-              <a href="#AboutUs">AboutUs</a>
-            </li>
-            <li>
-              <a href="#Images">Images</a>
-            </li>
-            <li>
-              <a href="#Contact">Contact</a>
-            </li>
+            {% set i = i + 1 %}
+           {% endfor %}
           </ul>
         </div>
       </nav>
 <div style="margin-left: 150px;background: aliceblue;">
-      <section class="scrollspy" id="Home">
-      Home
-      </section>
-
-      <section class="scrollspy" id="AboutUs">
-      AboutUs
-      </section>
-
-      <section class="scrollspy" id="Images">
-      Images
-      </section>
-
-      <section class="scrollspy" id="Contact">
-      Contact
-      </section>
+      {% for item in items %}
+        <section class="scrollspy" id="{{ item.content['#paragraph'].field_scroll_title.value }}">
+        {{ item.content['#paragraph'].field_scroll_description.value|raw }}
+        </section>
+      {% endfor %}
 	  </div>
