@@ -48,5 +48,4 @@ sites/simpletest
 .ht.router.php
 .lando.yml
 
-themes/
-sites/default/files/php/
+*/.DS_Store
